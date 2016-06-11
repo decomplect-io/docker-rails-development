@@ -18,3 +18,5 @@ USER rails
 VOLUME /home/rails/app
 
 WORKDIR /home/rails/app
+
+CMD ["bash"]
