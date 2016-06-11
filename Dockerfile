@@ -1,4 +1,5 @@
 FROM ubuntu:14.04
+MAINTAINER Sahil Muthoo <sahil@decomplect.io>
 
 RUN  apt-get update -y \
      && apt-get install -y --no-install-recommends \
