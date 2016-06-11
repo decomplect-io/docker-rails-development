@@ -17,7 +17,7 @@ WORKDIR /home/rails/app
 
 RUN useradd -ms /bin/bash rails
 
-RUN chown -R rails /usr/local/bundle && chown -R /home/rails
+RUN chown -R rails /usr/local/bundle && chown -R rails /home/rails
 
 USER rails
 
