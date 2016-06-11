@@ -8,7 +8,7 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - \
 		libxml2-dev \
 		curl \
 		build-essential \
-	&& gem update
+	&& gem update \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN useradd -ms /bin/bash rails
