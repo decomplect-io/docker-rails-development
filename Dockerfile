@@ -11,14 +11,15 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - \
 	&& gem update \
 	&& rm -rf /var/lib/apt/lists/*
 
-RUN useradd -ms /bin/bash rails
-
-RUN chown -R rails /usr/local/bundle
-
-USER rails
 
 VOLUME /home/rails/app
 
 WORKDIR /home/rails/app
+
+RUN useradd -ms /bin/bash rails
+
+RUN chown -R rails /usr/local/bundle && chown -R /home/rails
+
+USER rails
 
 CMD ["bash"]
