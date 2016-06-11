@@ -1,7 +1,8 @@
-## Docker container for Rails development
+## Docker container for Rails development (With Postgresql)
 
 - Based on Ubunty trusty (14.04) docker image
 - Installs Ruby 2.2 and Nodejs 6.x
+- Install libpq-dev and postgresql-client. This ensures that the `pg` gem installs cleanly and `pg_` commands work
 - Creates a user called rails
 - Sets up a volume at /home/rails/app where you can point your app
 - Any service such as PostgreSQL or Redis is expected to be linked. No services are installed in this container.
