@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/decomplect-io/docker-rails-development.svg?branch=postgresql)](https://travis-ci.org/decomplect-io/docker-rails-development)
 # Supported tags and respective `Dockerfile` links
 
 -	[`v0.0.1` (*v0.0.1/Dockerfile*)](https://github.com/decomplect-io/docker-rails-development/blob/v0.0.1/Dockerfile)
