@@ -1,4 +1,9 @@
-## Docker container for Rails development
+# Supported tags and respective `Dockerfile` links
+
+-	[`v0.0.1` (*v0.0.1/Dockerfile*)](https://github.com/decomplect-io/docker-rails-development/blob/v0.0.1/Dockerfile)
+-	[`v0.0.1-postgresql` (*v0.0.1-postgresql/Dockerfile*)](https://github.com/decomplect-io/docker-rails-development/blob/v0.0.1-postgresql/Dockerfile)
+
+# Docker container for Rails development
 
 - Based on Ubunty trusty (14.04) docker image
 - Installs Ruby 2.2 and Nodejs 6.x
@@ -6,11 +11,11 @@
 - Sets up a volume at /home/rails/app where you can point your app
 - Any service such as PostgreSQL or Redis is expected to be linked. No services are installed in this container.
 
-## TODO
+# TODO
 
 - Example of usage
 
-## License
+# License
 
 MIT License
 
