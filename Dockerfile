@@ -1,24 +1,28 @@
-FROM ruby:2.2-slim
+FROM ubuntu:14.04
 
-RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - \
-	&& apt-get install -y --no-install-recommends \
-		nodejs \
-		libxslt-dev \
-		libxml2-dev \
-		curl \
-		build-essential \
-	&& gem update \
-	&& rm -rf /var/lib/apt/lists/*
+RUN  apt-get update -y \
+     && apt-get install -y --no-install-recommends \
+        curl \
+        software-properties-common \
+        libxslt-dev \
+        libxml2-dev \
+        build-essential \
+     && apt-add-repository ppa:brightbox/ruby-ng \
+     && curl -sL https://deb.nodesource.com/setup_6.x | bash - \
+     && apt-get install -y --no-install-recommends \
+        ruby2.2 \
+        ruby2.2-dev \
+        nodejs \
+     && gem install bundler \
+     && gem update \
+	 && rm -rf /var/lib/apt/lists/*
 
+RUN useradd -ms /bin/bash rails
+
+USER rails
 
 VOLUME /home/rails/app
 
 WORKDIR /home/rails/app
-
-RUN useradd -ms /bin/bash rails
-
-RUN chown -R rails /usr/local/bundle && chown -R rails /home/rails
-
-USER rails
 
 CMD ["bash"]
