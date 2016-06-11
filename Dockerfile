@@ -11,6 +11,6 @@ RUN useradd -ms /bin/bash rails
 
 USER rails
 
-WORKDIR /home/rails
-
 VOLUME /home/rails/app
+
+WORKDIR /home/rails/app
