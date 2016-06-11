@@ -4,6 +4,9 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - \
     && apt-get upgrade -y \
 	&& apt-get install -y --no-install-recommends \
 		nodejs \
+		libxslt-dev \
+		libxml2-dev \
+		curl \
 		build-essential \
 	&& rm -rf /var/lib/apt/lists/*
 
