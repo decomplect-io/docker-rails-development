@@ -13,6 +13,8 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - \
 
 RUN useradd -ms /bin/bash rails
 
+chown -R rails /usr/local/bundle
+
 USER rails
 
 VOLUME /home/rails/app
