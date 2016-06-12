@@ -24,13 +24,12 @@ services:
     environment:
       - POSTGRES_PASSWORD=postgres
   web:
-    restart: always
     image: decomplect/rails-development:v0.0.1-postgresql
     environment:
       - DATABASE_URL=postgresql://postgres:postgres@db/sample-rails-docker_development
       - TEST_DATABASE_URL=postgresql://postgres:postgres@db/sample-rails-docker_test
       - RAILS_ENV=development
-    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    command: bundle install && bundle exec rails s -p 3000 -b '0.0.0.0'
     volumes:
       - .:/home/rails/app
     ports:
@@ -63,7 +62,6 @@ test:
 - Run the following init commands in the context of the `web` container:
 
 ```bash
-$ docker-compose exec web bundle install
 $ docker-compose exec web bundle exec rake db:create db:migrate
 ```
 
