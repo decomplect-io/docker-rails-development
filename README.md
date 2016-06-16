@@ -7,7 +7,7 @@
 # Docker container for Rails development
 
 - Based on Ubunty trusty (14.04) docker image
-- Installs Ruby 2.2 and Nodejs 6.x
+- Installs Ruby 2.3 and Nodejs 6.x
 - Creates a user called rails
 - Sets up a volume at /home/rails/app where you can point your app
 - Any service such as PostgreSQL or Redis is expected to be linked. No services are installed in this container.

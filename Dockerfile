@@ -11,8 +11,8 @@ RUN  apt-get update -y \
      && apt-add-repository ppa:brightbox/ruby-ng \
      && curl -sL https://deb.nodesource.com/setup_6.x | bash - \
      && apt-get install -y --no-install-recommends \
-        ruby2.2 \
-        ruby2.2-dev \
+        ruby2.3 \
+        ruby2.3-dev \
         nodejs \
      && gem install bundler \
      && gem update \
