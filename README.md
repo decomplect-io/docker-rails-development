@@ -1,8 +1,8 @@
 [![Build Status](https://travis-ci.org/decomplect-io/docker-rails-development.svg?branch=master)](https://travis-ci.org/decomplect-io/docker-rails-development)
 # Supported tags and respective `Dockerfile` links
 
--	[`v0.0.1` (*v0.0.1/Dockerfile*)](https://github.com/decomplect-io/docker-rails-development/blob/v0.0.1/Dockerfile)
--	[`v0.0.1-postgresql` (*v0.0.1-postgresql/Dockerfile*)](https://github.com/decomplect-io/docker-rails-development/blob/v0.0.1-postgresql/Dockerfile)
+-	[`v1.0.0` (*v1.0.0/Dockerfile*)](https://github.com/decomplect-io/docker-rails-development/blob/v1.0.0/Dockerfile)
+-	[`v1.0.0-postgresql` (*v1.0.0-postgresql/Dockerfile*)](https://github.com/decomplect-io/docker-rails-development/blob/v1.0.0-postgresql/Dockerfile)
 
 # Docker container for Rails development
 
