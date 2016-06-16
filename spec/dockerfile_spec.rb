@@ -13,7 +13,7 @@ describe 'Dockerfile' do
     expect(os_version).to include('Ubuntu 14.04')
   end
 
-  %w(ruby2.2 ruby2.2-dev nodejs).each do |package|
+  %w(ruby2.3 ruby2.3-dev nodejs).each do |package|
     describe package(package) do
       it { should be_installed }
     end
